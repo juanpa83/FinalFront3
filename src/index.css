@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.favButtonAgregar {
+  background-color: #99cc99;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: inset 0 0 10px rgb(7, 64, 1), 0 0 5px rgba(69, 109, 69, 0.812);
+  cursor: pointer;
+}
+
+.favButtonEliminar {
+  background-color: #78a3e3;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: inset 0 0 10px rgb(2, 52, 90), 0 0 5px rgba(101, 98, 167, 0.812);
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+a:hover {
+  color: rgb(136, 136, 136);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  margin-top: 0.2rem;
+}
+
+footer > a > img {
+  width: 200px;
+  margin: 0;
+}
+footer > p {
+  margin: 0;
+  padding-top: 0.7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50rem;
+  height: 10rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+  row-gap: 0.5rem;
+  padding-bottom: 6.5rem;
+
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+}
+
+.card:hover {
+  border: 0.5px solid rgb(206, 217, 142);
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 90vw;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.dark {
+  background-color: #12121296;
+  color: white;
+}
+.dark > a {
+  color: white;
+}
+.foto {
+  width: 100%;
+}
+
+.logos {
+  width: 2rem;
+}
+.icon {
+  width: 7rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #99cc99;
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 10px rgb(7, 64, 1), 0 0 5px rgba(69, 109, 69, 0.812);
+  cursor: pointer;
+  margin-left: 5rem;
+}
+.button:hover {
+  color: rgb(136, 136, 136);
+}
+.contact {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fav {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+
+}
+
+.tipo{
+  width: 20rem;
+}
+.tipoText {
+  width: 20rem;
+  height: 100px;
+  text-align: start;
+}
