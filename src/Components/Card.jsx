@@ -14,21 +14,21 @@ const Card = ({ id, name, username, onRemoveFav }) => {
   }, [id]);
 
   const addFav = () => {
-    const profesionales = JSON.parse(localStorage.getItem("medicos") || "[]");
-    const profesionalAdd = profesionales.find((item) => item.id === id);
+    const profesionalesFav = JSON.parse(localStorage.getItem("medicos") || "[]");
+    const profesionalAdd = profesionalesFav.find((item) => item.id === id);
     if (profesionalAdd) {
       alert(`Error, ${name} ya ha sido agregado a favoritos.`);
       return;
     }
 
-    profesionales.push({ id, name, username });
-    localStorage.setItem("medicos", JSON.stringify(profesionales));
+    profesionalesFav.push({ id, name, username });
+    localStorage.setItem("medicos", JSON.stringify(profesionalesFav));
     setIsFavorito(true);
   };
 
   const removeFav = () => {
-    const profesionales = JSON.parse(localStorage.getItem("medicos") || "[]");
-    const nuevosProfesionales = profesionales.filter((item) => item.id !== id);
+    const favProfesionalesRem = JSON.parse(localStorage.getItem("medicos") || "[]");
+    const nuevosProfesionales = favProfesionalesRem.filter((item) => item.id !== id);
     localStorage.setItem("medicos", JSON.stringify(nuevosProfesionales));
     setIsFavorito(false);
     onRemoveFav(id);
